@@ -1,0 +1,4 @@
+Indice : Pour lire les arguments de la ligne de commande, 
+vous pouvez utiliser sys.argv. Assurez-vous de vérifier que 
+l'utilisateur a bien saisi trois arguments : 
+le premier nombre, l'opération (comme +, -, *, ou /), et le deuxième nombre.

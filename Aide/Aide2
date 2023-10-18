@@ -1,0 +1,3 @@
+Indice : Pour ce script, vous avez besoin d'un seul argument : 
+la température en degrés Celsius. Assurez-vous de bien comprendre 
+la formule de conversion de Celsius en Fahrenheit (F = C * 9/5 + 32).

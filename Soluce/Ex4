@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+# Contenu du fichier Ex4.py
+import sys
+
+def main(ac, av):
+    if ac != 2:
+        print("Usage: python somme_chiffres.py <nombre>")
+        sys.exit(1)
+
+    nombre = int(av[1])
+    somme = 0
+
+    # Calcule la somme des chiffres en itérant sur chaque chiffre du nombre
+    while nombre > 0:
+        chiffre = nombre % 10
+        somme += chiffre
+        nombre //= 10
+
+    print("La somme des chiffres est :", somme)
+
+if __name__ == '__main__':
+    main(len(sys.argv), sys.argv)

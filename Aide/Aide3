@@ -1,0 +1,4 @@
+Indice : Vous avez besoin d'un seul argument : 
+un nombre entier positif. Assurez-vous de vérifier que 
+l'entrée de l'utilisateur est bien un nombre entier positif,
+car la factorielle ne peut être calculée que pour de tels nombres.

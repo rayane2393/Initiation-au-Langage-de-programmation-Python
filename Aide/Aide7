@@ -1,0 +1,8 @@
+Pour créer un jeu de devinette, commencez par générer un nombre aléatoire 
+entre 1 et 100 que le joueur doit deviner. Utilisez une boucle pour 
+permettre au joueur de faire plusieurs essais. 
+Pour chaque essai, comparez le nombre deviné par le joueur 
+au nombre à deviner et donnez des indices sur si le nombre 
+est plus grand ou plus petit. Assurez-vous de compter les essais 
+du joueur. Si le joueur devine correctement ou atteint le nombre 
+maximum d'essais, le jeu se termine.

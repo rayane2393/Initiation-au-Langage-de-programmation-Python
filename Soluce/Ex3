@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+# Contenu du fichier Ex3.py
+import sys
+
+def main(ac, av):
+    if ac != 2:
+        print("Usage: python factorielle.py <nombre_entier_positif>")
+        sys.exit(1)
+
+    n = int(av[1])
+
+    if n < 0:
+        print("Le nombre doit être positif.")
+        sys.exit(1)
+
+    result = 1
+
+    for i in range(1, n + 1):
+        result *= i
+
+    print("La factorielle de", n, "est", result)
+
+if __name__ == '__main__':
+    main(len(sys.argv), sys.argv)

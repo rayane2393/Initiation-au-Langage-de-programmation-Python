@@ -1,0 +1,5 @@
+Indice : Vous devez trouver le plus grand élément 
+parmi une liste d'entiers. Vous pouvez utiliser la 
+fonction max() de Python pour trouver le plus grand 
+élément dans une liste. Assurez-vous de convertir les 
+arguments en entiers pour les comparer.

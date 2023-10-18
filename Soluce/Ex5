@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+# Contenu du fichier Ex5.py
+import sys
+
+def main(ac, av):
+    if ac < 2:
+        print("Usage: python plus_grand_element.py <nombre1> <nombre2> ... <nombreN>")
+        sys.exit(1)
+
+    nombres = [int(x) for x in av[1:]]
+    
+    if len(nombres) == 1:
+        print("Le plus grand élément est :", nombres[0])
+    else:
+        plus_grand = max(nombres)
+        print("Le plus grand élément est :", plus_grand)
+
+if __name__ == '__main__':
+    main(len(sys.argv), sys.argv)

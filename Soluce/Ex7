@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+# Contenu du fichier Ex7.py
+import sys
+import random
+
+def main(ac, av):
+    if ac != 2:
+        print("Usage: python jeu_de_devinette.py <nombre_entier>")
+        sys.exit(1)
+
+    nombre_a_deviner = random.randint(1, 100)
+    nombre_essais = 0
+    nombre_devine = int(av[1])
+
+    while nombre_essais < 10:
+        nombre_essais += 1
+
+        if nombre_devine < nombre_a_deviner:
+            print("Le nombre à deviner est plus grand.")
+        elif nombre_devine > nombre_a_deviner:
+            print("Le nombre à deviner est plus petit.")
+        else:
+            print(f"Bravo ! Vous avez deviné le nombre en {nombre_essais} essais.")
+            break
+
+        if nombre_essais < 10:
+            nombre_devine = int(input("Essai suivant : "))
+
+    if nombre_devine != nombre_a_deviner:
+        print(f"Désolé, le nombre à deviner était {nombre_a_deviner}.")
+
+if __name__ == '__main__':
+    main(len(sys.argv), sys.argv)

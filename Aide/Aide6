@@ -1,0 +1,5 @@
+Indice : Un palindrome est un mot ou une phrase qui se lit 
+de la même manière de gauche à droite et de droite à 
+gauche. Vous pouvez comparer le mot à sa version 
+inversée pour déterminer s'il s'agit d'un palindrome. 
+En Python, vous pouvez utiliser la notation de découpage de chaîne ([::-1]) pour inverser une chaîne.

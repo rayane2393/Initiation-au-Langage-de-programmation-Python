@@ -1,0 +1,4 @@
+Indice : Pour ce script, vous avez besoin d'un seul argument : 
+un nombre entier. Vous devez itérer sur les chiffres de ce nombre 
+pour calculer leur somme. Vous pouvez utiliser l'opération modulo (%) 
+pour obtenir le chiffre le plus à droite et la division entière (//) pour éliminer ce chiffre.

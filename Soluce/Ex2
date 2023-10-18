@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+# Contenu du fichier Ex2.py
+import sys
+
+def main(ac, av):
+    if ac != 2:
+        print("Usage: python conversion_temperature.py <température_en_degrés_celsius>")
+        sys.exit(1)
+
+    celsius = float(av[1])
+    fahrenheit = (celsius * 9/5) + 32
+
+    print("La température en degrés Fahrenheit est :", fahrenheit)
+
+if __name__ == '__main__':
+    main(len(sys.argv), sys.argv)

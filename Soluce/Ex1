@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+# Contenu du fichier Ex1.py
+import sys
+
+def main(ac, av):
+    if ac != 4:
+        print("Usage: python calculatrice.py <nombre1> <opération> <nombre2>")
+        sys.exit(1)
+
+    num1 = float(av[1])
+    operation = av[2]
+    num2 = float(av[3])
+
+    if operation == '+':
+        result = num1 + num2
+    elif operation == '-':
+        result = num1 - num2
+    elif operation == '*':
+        result = num1 * num2
+    elif operation == '/':
+        result = num1 / num2
+    else:
+        print("Opération non valide")
+        sys.exit(1)
+
+    print("Résultat :", result)
+
+if __name__ == '__main__':
+    main(len(sys.argv), sys.argv)

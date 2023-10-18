@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+# Contenu du fichier Ex6.py
+import sys
+
+def main(ac, av):
+    if ac != 2:
+        print("Usage: python palindrome.py <mot>")
+        sys.exit(1)
+
+    mot = av[1]
+
+    if mot == mot[::-1]:
+        print("Le mot est un palindrome.")
+    else:
+        print("Le mot n'est pas un palindrome.")
+
+if __name__ == '__main__':
+    main(len(sys.argv), sys.argv)
